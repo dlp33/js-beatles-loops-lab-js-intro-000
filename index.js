@@ -22,9 +22,12 @@ function theBeatlesPlay(musicians, instruments) {
 function johnLennonFacts(facts) {
   var exclamation = [];
   var i = 0;
-  while(facts.length > 0) {
+  while(true) {
     exclamation[i] = facts[i] + "!!!";
     i++;
+    if(i > facts.length-1) {
+      break;
+    }
   }
   return exclamation;
 }
